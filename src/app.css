@@ -1,0 +1,12 @@
+ @font-face {
+    font-family: 'Impossible - 500 Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Impossible - 500 Regular'), url('IMPOS50_.woff') format('woff');
+    }
+
+h1 {
+    font-family: 'Impossible - 500 Regular';
+    font-weight: 200;
+    color:aliceblue;
+}
