@@ -4,6 +4,20 @@ import SearchBox from './SearchBox'
 import {robots} from './robots';
 import './app.css'
 
+
+
+function App(){
+	const [robots, setRobots] = useState(robots);
+	const [searchfield, setSearchfield ] = setState(searchfield);
+}
+
+
+return (
+	const filteredRobots = {robots}.filter(robots =>{
+		return robotos.name.toLowerCase().includes({searchfield}.toLowerCase())
+	})
+)
+
 class App extends Component {
 	constructor() {
 		super()
@@ -11,6 +25,12 @@ class App extends Component {
 			robots: robots,
 			searchfield: ''
 		}
+	}
+
+	componentDidMount() {
+		fetch('https://jsonplaceholder.typicode.com/users')
+		.then(response => response.json())
+		.then(users => {this.setState({robots:users})});
 	}
 
 	onSearchChange = (event) => {
